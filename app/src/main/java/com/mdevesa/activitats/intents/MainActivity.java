@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    //Explicit intent
     /** Called when the user taps the 'Send' button */
     public void sendMessage(View view) {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //Implicit intent
     /** Called when the user taps the 'Open App' button */
     public void send(View view){
         Intent sendIntent = new Intent();
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Implicit intent
     /** Called when the user taps the 'Go to Google' button */
     public void openWeb(View view){
         Uri uri = Uri.parse("https://www.google.es/");
